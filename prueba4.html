@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="darkmode.js"></script>
+  
+</head>
+<body class="m-0 p-0 font-mono bg-dark dark:bg-[#f7f7f7] text-light dark:text-dark">
+
+  
+
+
+
+  <!-- ==============================
+       BARRA DE NAVEGACIÓN
+  ============================== -->
+  <nav class="bg-deep-blue dark:bg-[#F1F5F9] dark:text-dark px-10 py-4 flex flex-col sm:flex-row justify-between items-center gap-4 sm:gap-0 text-center sm:text-left sm:sticky top-0 z-50">
+
+    <!-- Logo -->
+    <a href="#">
+    <img 
+            
+            src="./img/logo.png"
+            alt="Foto de Rolando"
+            class="w-20 h-max hover:scale-102 active:scale-90"
+          /></a>
+
+ 
+  <!-- para el boton de encendido -->         
+<label class="theme-switch" >
+  <input type="checkbox" class="theme-switch__checkbox">
+  <div class="theme-switch__container">
+    <div class="theme-switch__clouds"></div>
+    <div class="theme-switch__stars-container">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    <div class="theme-switch__circle-container">
+      <div class="theme-switch__sun-moon-container">
+        <div class="theme-switch__moon">
+          <div class="theme-switch__spot"></div>
+          <div class="theme-switch__spot"></div>
+          <div class="theme-switch__spot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</label>      
+
+
+    <!-- Links del menú -->
+    <ul class="list-none m-0 p-0 flex flex-wrap justify-center">
+      <li><a href="#sobre-mi"    class="menu-link active-link text-light dark:text-dark text-[15px] sm:text-5xl no-underline transition-colors duration-200">ABOUT ME</a></li>
+      <li><a href="#habilidades" class="menu-link text-light dark:text-dark text-[15px] sm:text-5xl no-underline transition-colors duration-200">SKILLS</a></li>
+      <li><a href="#proyectos"   class="menu-link text-light dark:text-dark text-[15px] sm:text-5xl no-underline transition-colors duration-200">PROJECTS</a></li>
+      
+    </ul>
+
+    <!-- Botón de contacto -->
+    <a href="#contacto" class="btn-nav bg-highlight text-dark dark:bg-[#cce6ff] dark:text-dark sm:text-[28px] px-5 py-2 rounded-full font-bold text-sm no-underline transition-colors duration-200">Contact</a>
+
+
+  </nav>
+
+
+  <!-- ==============================
+       SECCIÓN HERO
+  ============================== -->
+  <section class="bg-radial-[at_center] from-highlight to-deep-blue to-23% dark:from-[#e6f0ff] dark:to-[#cce6ff] px-10 py-0 sm:px-5 sm:py-0 text-center flex justify-center items-center flex-col">
+    <div>
+     <h1 class="font-sans-serif text-[32px] sm:text-[82px] m-0 mb-2.5">I'm <span class="text-highlight dark:text-[#3399ff]">Rolando Campuzano</span></h1>
+       <p class="text-softGray dark:text-[#374151] text-[18px] sm:text-[28px] m-0 mb-8">Full Stack Developer — React · Node.js · WordPress</p>
+    </div>
+    <div class="flex flex-col sm:flex-row sm:justify-between gap-x-30 items-center w-full">     
+       <!-- Foto del desarrollador -->
+      <div class="client-review animate-fadeUp order-2 sm:order-1 sm:flex-1 sm:transform sm:-rotate-9 bg-slate-900/40 dark:bg-slate-200/70 backdrop-blur-md px-10 rounded-3xl shadow-2xl border border-slate-800 dark:border-slate-300 space-y-4">
+                <p class="text-2xl font-bold text-slate-300 dark:text-slate-700 flex items-center gap-2">
+                    Client Review From Australia
+                    <span class="inline-block bg-lime-400 text-black px-2 py-0.5 rounded text-base font-bold">4.9</span>
+                </p>
+                <p class="text-slate-400 dark:text-slate-600 text-lg leading-relaxed">
+                    Outstanding Web Developer, exceeded all expectations, highly recommended without hesitation.
+                </p>
+                
+      </div>  
+       
+             
+       <div class="order-1 sm:order-2 sm:flex-2">
+        <div class="relative">
+         
+         
+         <img 
+            
+            src="./rolandofoto.png"
+            alt="Foto de Rolando"
+            class="drop-shadow-[0_-50px_40px_rgba(227,255,106,0.5)] dark:drop-shadow-[0_-50px_40px_rgba(51,153,255,0.4)] object-cover border-highlight inline-block"
+          />
+          </div>
+     
+            <div class="flex justify-center sm:gap-4 flex-wrap">
+                <a href="#proyectos" class="btn-primario bg-highlight text-dark dark:bg-[#cce6ff] dark:text-deep-blue px-7 py-3 rounded-[25px] font-bold text-[15px] hover:shadow-[0_0_15px_rgba(227,255,106,0.7)] 
+          dark:hover:shadow-[0_0_15px_rgba(51,153,255,0.6) absolute bottom-0.5 sm:bottom-20 inline-block no-underline transition-colors duration-200">My Projects →</a>
+                  <!--  <a href="#sobre-mi"  class="btn-secundario border-2 border-highlight text-highlight px-7 py-3 rounded-[25px] text-[15px] inline-block no-underline transition-colors duration-200">Sobre mí</a>-->
+            </div>
+
+        </div>
+
+        <div class="animate-fadeUp order-3 transform sm:rotate-9 sm:flex-1 bg-slate-900/40 dark:bg-slate-200/70 backdrop-blur-md p-10 rounded-3xl shadow-2xl border border-slate-800 dark:border-slate-300 space-y-8">
+                <p class="text-2xl font-bold text-slate-300 dark:text-slate-700 mb-6">MY EXPERTISE</p>
+
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-xl font-medium text-slate-400 dark:text-slate-600">BACKEND</span>
+                        <span class="text-xl font-medium text-slate-400 dark:text-slate-600">85%</span>
+                    </div>
+                    <div class="w-full bg-slate-700 dark:bg-slate-300 rounded-full h-3">
+                        <div class="bg-indigo-600 h-3 rounded-full" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-xl font-medium text-slate-400 dark:text-slate-600">CMS</span>
+                        <span class="text-xl font-medium text-slate-400 dark:text-slate-600">90%</span>
+                    </div>
+                    <div class="w-full bg-slate-700 dark:bg-slate-300 rounded-full h-3">
+                        <div class="bg-sky-500 h-3 rounded-full" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex justify-between items-center mb-1">
+                        <span class="text-xl font-medium text-slate-400 dark:text-slate-600">FRONTEND</span>
+                        <span class="text-xl font-medium text-slate-400 dark:text-slate-600">93%</span>
+                    </div>
+                    <div class="w-full bg-slate-700 dark:bg-slate-300 rounded-full h-3">
+                        <div class="bg-lime-400 h-3 rounded-full" style="width: 93%"></div>
+                    </div>
+                </div>
+
+        </div>
+      
+    
+    </div>
+  </section>
+
+
+  <!-- ==============================
+       SECCIÓN SOBRE MÍ
+  ============================== -->
+  <section class="px-10 py-5 sm:px-5  sm:py-10 text-center" id="sobre-mi">
+
+    <h2 class="text-[32px] sm:text-[42px] text-highlight dark:text-[#374151] mb-10">WHO AM I?</h2>
+
+    <!--
+      Layout: foto izq | texto centro | foto der  (desktop)
+      En móvil: columna, fotos debajo del texto en fila
+    -->
+    <div class="relative max-w-225 mx-auto flex flex-col sm:flex-row items-center">
+
+      <!-- ── FOTO 1 — izquierda, rotada -8° ── -->
+      <div class="hidden sm:flex shrink-0 items-start justify-center w-40 min-h-70 relative">
+        <img
+          src="./img/foto1.png"
+          alt="Foto 1"
+          class="absolute top-0 left-0
+                 w-32.5 aspect-3/4 object-cover
+                 border-[3px] border-highlight dark:border-[#3399ff] rounded
+                 shadow-[0_8px_24px_rgba(0,0,0,0.6)]
+                 rotate-[-8deg]
+                 transition-transform duration-300
+                 hover:rotate-[-4deg] hover:scale-105 hover:z-10"
+        />
+      </div>
+
+      <!-- ── TEXTO CENTRAL ── -->
+      <div class="flex-1 px-4 sm:text-9xl sm:px-10 text-center z-2">
+
+        <p class="text-softGray dark:text-[#4a5568] text-base sm:text-2xl leading-[1.8] mb-3.5">
+          I am a full-stack web developer specializing in
+          <strong class="text-light dark:text-dark">React.js</strong>.
+          I also work with WordPress, Elementor, and WooCommerce.
+        </p>
+
+        <p class="text-softGray dark:text-[#4a5568] text-base sm:text-2xl leading-[1.8] mb-3.5">
+          Programming is my passion. I work diligently on every project,and I'm always looking to learn something new.
+        </p>
+
+        <p class="text-softGray dark:text-[#4a5568] text-base sm:text-2xl leading-[1.8] mb-8">
+          In my free time I enjoy video games and reading.
+          <span class="text-neonGreen">It's quite fun!</span>
+        </p>
+
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="#proyectos"
+             class="btn-primario bg-highlight text-dark dark:bg-[#cce6ff] dark:text-deep-blue px-7 py-3 rounded-[25px] font-bold text-[15px] inline-block transition-colors duration-200">
+            SHOW MY PROJECTS
+          </a>
+          <a href="#contacto"
+             class="btn-secundario border-2 border-highlight text-highlight dark:bg-[#cce6ff] dark:text-deep-blue px-7 py-3 rounded-[25px] text-[15px] inline-block transition-colors duration-200">
+            CONTACT ME
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ── FOTO 2 — derecha, rotada +7° ── -->
+      <div class="hidden sm:flex shrink-0 items-start justify-center w-40 min-h-70 relative">
+        <img
+          src="./img/foto2.png"
+          alt="Foto 2"
+          class="absolute top-5 right-0
+                 w-32.5 aspect-3/4 object-cover
+                 border-[3px] border-highlight dark:border-[#3399ff] rounded
+                 shadow-[0_8px_24px_rgba(0,0,0,0.6)]
+                 rotate-[7deg]
+                 transition-transform duration-300
+                 hover:rotate-3 hover:scale-105 hover:z-10"
+        />
+      </div>
+
+    </div>
+
+    <!-- ── FOTO 3 — centrada debajo del texto, rotada -3° ── -->
+    <div class="hidden sm:flex justify-center mt-6 mb-2">
+      <img
+        src="./img/foto3.png"
+        alt="Foto 3"
+        class="w-32.5 aspect-3/4 object-cover
+               border-[3px] border-highlight dark:border-[#3399ff] rounded
+               shadow-[0_8px_24px_rgba(0,0,0,0.6)]
+               -rotate-3
+               transition-transform duration-300
+               hover:-rotate-1 hover:scale-105"
+      />
+    </div>
+
+    <!-- ── FOTOS MÓVIL: fila simple debajo del texto ── -->
+    <div class="flex sm:hidden justify-center items-end gap-4 mt-8">
+      <img
+        src="./img/foto1.png"
+        alt="Foto 1"
+        class="w-22.5 aspect-3/4 object-cover
+               border-2 border-highlight dark:border-[#3399ff] rounded
+               shadow-[0_4px_12px_rgba(0,0,0,0.5)]
+               -rotate-6
+               transition-transform duration-300"
+      />
+      <img
+        src="./img/foto2.png"
+        alt="Foto 2"
+        class="w-22.5 aspect-3/4 object-cover
+               border-2 border-highlight dark:border-[#3399ff] rounded
+               shadow-[0_4px_12px_rgba(0,0,0,0.5)]
+               rotate-[5deg] -translate-y-3
+               transition-transform duration-300"
+      />
+      <img
+        src="./img/foto3.png"
+        alt="Foto 3"
+        class="w-22.5 aspect-3/4 object-cover
+               border-2 border-highlight dark:border-[#3399ff] rounded
+               shadow-[0_4px_12px_rgba(0,0,0,0.5)]
+               -rotate-3
+               transition-transform duration-300"
+      />
+    </div>
+
+  </section>
+
+
+  <!-- ==============================
+       SECCIÓN HABILIDADES
+  ============================== -->
+  <section class="bg-deepBlue dark:bg-[#e8edf5] px-0.5 sm:px-10 py-5 sm:py-10 text-center">
+
+    <h2 class="text-[32px] sm:text-[42px] text-highlight dark:text-[#374151] mb-0">MY SKILLS</h2>
+
+    <!-- Cajitas de tecnologías -->
+    <div class=" grid grid-cols-[repeat(4,minmax(0,1fr))_2fr] grid-rows-2 items-center gap-0.5 w-full">
+
+      <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[1/2] row-[1/2] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/HTML5.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">HTML5</span>
+      </div>  
+
+      <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[2/3] row-[1/2] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/logo-css3.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">CSS3</span>
+      </div>
+
+      <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[3/4] row-[1/2] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/js.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">JavaScript</span>
+      </div>
+
+      <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[4/5] row-[1/2] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/reacjs.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">React.js</span>
+      </div>
+            <div class=" bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded col-[5/6] row-span-2 py-5 items-center text-center justify-center text-white dark:text-dark h-1/1 ml-3.5">
+              <p class="text-highlight dark:text-[#374151] text-4xl font-bold sm:text-6xl">4</p>
+              <p class="text-sm sm:text-lg leading-tight uppercase tracking-tighter">
+                Years <br>Experience <br>Working
+              </p>
+             <a href="#" class="btn-primario bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark px-1 py-1 sm:px-7 med:py-3 rounded-[25px] font-bold text-[10px] sm:text-[15px] inline-block no-underline transition-colors duration-200">Download CV</a> 
+             
+        </div>
+
+      <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[1/2] row-[2/3] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/next.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">Next.js</span>
+      </div>
+
+      <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[2/3] row-[2/3] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/node-js.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">Node.js</span>
+      </div>
+      <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[3/4] row-[2/3] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/tailwind.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">Tailwind</span>
+      </div>
+
+       <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-[10px] col-[4/5] row-[2/3] w-full px-2 py-4 text-xs sm:text-sm text-light dark:text-dark min-w-22.5 flex flex-col items-center">
+          <img 
+            src="./img/wordpress.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">WordPress</span>
+      </div>
+
+    </div>
+</section>
+
+<section class="bg-deepBlue dark:bg-[#e8edf5]  px-0.5 py-4 sm:px-5 sm:py-10 text-center">
+<div class="sm:max-w-6xl sm:mx-auto sm:px-4 sm:border border-[#2a3a50] dark:border-[#c0cce0] rounded-2xl">
+   <h2 class="text-[22px] sm:text-[32px] text-highlight dark:text-[#374151] mb-0">ADDITIONAL SKILLS</h2>
+
+ <div class="flex flex-wrap justify-center gap-0 mt-8 mb-8">
+
+      <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/Php-logo.png" 
+            alt="PHP" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">PHP</span>
+      </div>  
+
+      <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/mysql.png" 
+            alt="MySQL" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">MySQL</span>
+      </div>
+
+      <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/photoshop.png" 
+            alt="photoshop" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">Photoshop</span>
+      </div>
+
+      <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/powerdirector.png" 
+            alt="powerdirector" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">Powerdirector</span>
+      </div>
+
+      <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/excel.png" 
+            alt="excel" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">M.S.Excel</span>
+      </div>
+
+      <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/access.png" 
+            alt="CSS3" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">M.S.Access</span>
+      </div>
+      <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/powerpoint.png" 
+            alt="powerpoint" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">M.S.Powerpoint</span>
+      </div>
+       <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
+          <img 
+            src="./img/word.png" 
+            alt="word" 
+            class="w-10 h-10 mb-1.5 object-contain"
+          />
+          <span class="font-medium">M.S.Word</span>
+      </div>
+
+         
+
+    </div>
+
+</div>
+
+
+  </section>
+
+
+  <!-- ==============================
+       SECCIÓN PROYECTOS
+  ============================== -->
+  <section class="bg-dark dark:bg-[linear-gradient(135deg,rgba(226,226,226,1)_0%,rgba(219,219,219,1)_50%,rgba(209,209,209,1)_50%,rgba(209,209,209,1)_50%,rgba(254,254,254,1)_100%)] px-2 py-4 sm:px-5 sm:py-12.5 text-center"
+           id="proyectos">
+
+    <h2 class="text-[32px] sm:text-[42px] text-highlight dark:text-[#374151] mb-0">MY PROJECTS</h2>
+    <p class="text-softGray dark:text-[#4a5568] mt-1 sm:text-3xl">Some of the work I've done</p>
+
+   <div class="flex flex-col md:flex-row mt-8 gap-6">
+
+  <!-- ★ DIV 1 (1/4 del ancho en pantallas grandes) -->
+  <div class="md:w-1/4">
+    <div class="bg-deepBlue dark:bg-[#e8edf5] rounded-xl overflow-hidden text-left h-full flex flex-col justify-center p-9 sm:p-6">
+      <h2 class="text-light dark:text-dark text-[28px] sm:text-[42px] m-0 leading-[1.2]">
+        THE WORKS<br>CLOSEST TO<br>MY HEART
+      </h2>
+      <p class="text-softGray dark:text-[#4a5568] text-[14px] m-0 my-3">
+        Projects that reflect my passion for web development and design.
+      </p>
+      <a href="#" class="btn-primario bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark px-5 py-2.5 rounded-[25px] font-bold text-[14px] inline-block w-fit mt-2 transition-colors duration-200">
+        See all →
+      </a>
+    </div>
+  </div>
+
+  <!-- ★ DIV 2 (3/4 del ancho en pantallas grandes) -->
+  <div id="proyects" class="md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <!-- Tarjeta 1 -->
+    <div class="bg-blue-950 dark:bg-white dark:shadow-[0_5px_20px_rgba(0,0,0,0.1)] rounded-xl overflow-hidden text-left flex flex-col">
+      <img src="./img/anaisis.png"
+           alt="Plumbing Company"
+           class="w-full h-40 object-cover block" style="background-color:#2a3a50;" />
+      <div class="p-4 flex-1 flex flex-col justify-between">
+        <div>
+          <span class="inline-block bg-[#E3FF6A20] text-highlight dark:text-deep-blue text-xs px-2.5 py-0.5 rounded-[10px] mb-2.5">React.js</span>
+          <h3 class="m-0 mb-2 text-[17px] text-light dark:text-dark">Plumbing Company</h3>
+          <p class="m-0 mb-3.5 text-softGray dark:text-[#4a5568] text-sm leading-[1.6]">Corporate website with fluid animations and modern design.</p>
+        </div>
+        <div class="flex gap-2.5">
+          <a href="#" class="btn-small bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark px-3.5 py-1.5 rounded-[15px] text-[13px] font-bold transition-colors duration-200">See demo</a>
+          <a href="#" class="btn-small-outline bg-linear-to-r from-[#18181B] to-[#27272A] border border-highlight text-highlight px-3.5 py-1.5 rounded-[15px] text-[13px] transition-colors duration-200">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+      <!-- Tarjeta 2 -->
+        <div class="bg-blue-950 dark:bg-white dark:shadow-[0_5px_20px_rgba(0,0,0,0.1)] rounded-xl overflow-hidden text-left flex flex-col">
+            <img src="./img/tienda-linea-online-shop.jpg"
+             alt="E-Commerce Store"
+             class="w-full h-40 object-cover block" style="background-color:#2a3a50;" />
+        <div class="p-4">
+          <span class="inline-block bg-[#E3FF6A20] text-highlight dark:text-deep-blue text-xs px-2.5 py-0.5 rounded-[10px] mb-2.5">Next.js + WooCommerce</span>
+          <h3 class="m-0 mb-2 text-[17px] text-light dark:text-dark">E-Commerce Store</h3>
+          <p class="m-0 mb-3.5 text-softGray dark:text-[#4a5568] text-sm leading-[1.6]">Online store with shopping cart and integrated payments.</p>
+          <div class="flex gap-2.5">
+            <a href="#" class="btn-small bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark px-3.5 py-1.5 rounded-[15px] text-[13px] font-bold transition-colors duration-200">See demo</a>
+            <a href="#" class="btn-small-outline bg-gradient-to-r from-[#18181B] to-[#27272A] px-[15px] border border-highlight text-highlight px-3.5 py-1.5 rounded-[15px] text-[13px] transition-colors duration-200">GitHub</a>
+          </div>
+        </div>
+        </div>
+
+              <!-- Tarjeta 3 -->
+        <div class="bg-blue-950 dark:bg-white dark:shadow-[0_5px_20px_rgba(0,0,0,0.1)] rounded-xl overflow-hidden text-left flex flex-col">
+          <img src="./img/basedatos.jpg"
+              alt="Task Manager App"
+              class="w-full h-40 object-cover block" style="background-color:#2a3a50;" />
+          <div class="p-4">
+            <span class="inline-block bg-[#63a9f520] text-highlight dark:text-deep-blue text-xs px-2.5 py-0.5 rounded-[10px] mb-2.5">Node.js + MongoDB</span>
+            <h3 class="m-0 mb-2 text-[17px] text-light dark:text-dark">Task Manager App</h3>
+            <p class="m-0 mb-3.5 text-softGray dark:text-[#4a5568] text-sm leading-[1.6]">Task management application with login and database.</p>
+            <div class="flex gap-2.5">
+            <a href="#" class="btn-small bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark px-3.5 py-1.5 rounded-[15px] text-[13px] font-bold transition-colors duration-200">See demo</a>
+            <a href="#" class="btn-small-outline border border-highlight text-highlight px-3.5 py-1.5 rounded-[15px] text-[13px] transition-colors duration-200">GitHub</a>
+            </div>
+        </div>
+        </div>
+       </div> 
+    </div>
+
+  </section>
+
+
+  <!-- ==============================
+       SECCIÓN CONTACTO
+  ============================== -->
+  <section class="bg-dark dark:bg-white px-3 py-6 sm:px-5 sm:py-12.5 text-center"
+           id="contacto">
+
+    <!-- Tarjeta blanca redondeada -->
+    <div class="bg-light dark:bg-[#e8edf5] rounded-3xl px-10 py-12.5 sm:px-6 sm:py-8 max-w-150 mx-auto">
+
+      <h2 class="text-[32px] sm:text-[26px] text-dark mb-2">LET'S HAVE A CHAT</h2>
+      <p class="text-[#555555] text-[15px] mb-7">Do you have a project in mind? Write to me.</p>
+
+      <div class="campo mb-4 text-left">
+        <label for="nombre" class="block text-[13px] text-[#555555] mb-1.5">Your name</label>
+        <input
+          type="text" id="nombre" placeholder="Juan Pérez"
+          class="w-full bg-[#f0f0f0] border border-[#dddddd] rounded-lg px-3.5 py-3
+                 text-dark text-sm font-sans box-border"
+          style="color:#0D1117;"
+        />
+      </div>
+
+      <div class="campo mb-4 text-left">
+        <label for="email" class="block text-[13px] text-[#555555] mb-1.5">Your email</label>
+        <input
+          type="email" id="email" placeholder="juan@ejemplo.com"
+          class="w-full bg-[#f0f0f0] border border-[#dddddd] rounded-lg px-3.5 py-3
+                 text-dark text-sm font-sans box-border"
+          style="color:#0D1117;"
+        />
+      </div>
+
+      <div class="campo mb-4 text-left">
+        <label for="mensaje" class="block text-[13px] text-[#555555] mb-1.5">Message</label>
+        <textarea
+          id="mensaje" placeholder="Tell me about your project..."
+          class="w-full bg-[#f0f0f0] border border-[#dddddd] rounded-lg px-3.5 py-3
+                 text-dark text-sm font-sans box-border resize-y"
+          style="height:120px; color:#0D1117;"
+        ></textarea>
+      </div>
+
+      <button type="button"
+              class="btn-enviar w-full bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark border-none py-3.5 rounded-[25px]
+                     text-base font-bold cursor-pointer mt-2 transition-colors duration-200">
+        Send message →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- ==============================
+       PIE DE PÁGINA
+  ============================== -->
+  <footer class="px-10 py-6 text-center text-softGray dark:text-[#4a5568] text-sm bg-[#0a0f18] dark:bg-[#e8edf5]">
+
+    <p class="m-0">© 2026 Rolando Angel Campuzano Ustarez — Todos los derechos reservados</p>
+
+    <div class="flex justify-center gap-5 mt-2.5 flex-wrap">
+      <a href="#sobre-mi"    class="footer-link text-softGray dark:text-[#4a5568] text-[13px] no-underline transition-colors duration-200">Inicio</a>
+      <a href="#habilidades" class="footer-link text-softGray dark:text-[#4a5568] text-[13px] no-underline transition-colors duration-200">Habilidades</a>
+      <a href="#proyectos"   class="footer-link text-softGray dark:text-[#4a5568] text-[13px] no-underline transition-colors duration-200">Proyectos</a>
+      <a href="#contacto"    class="footer-link text-softGray dark:text-[#4a5568] text-[13px] no-underline transition-colors duration-200">Contacto</a>
+    </div>
+
+  </footer>
+
+
+</body>
+</html>
