@@ -1,14 +1,6 @@
-const PortfolioApp = {
-  init() {
-    this.renderHero();
-    this.renderSkills();
-    this.renderProjects();
-    this.setupContactForm();
-  },
 
-  renderHero() {
-    // Actualiza el nombre y el rol en el Hero
-    document.querySelector('#nombre').textContent = portfolioData.profile.name;
+
+document.querySelector('#nombre').textContent = portfolioData.profile.name;
     document.querySelector('#rol').textContent = 
       `${portfolioData.profile.role} — ${portfolioData.profile.technologies.join(' · ')}`;
     
@@ -37,95 +29,9 @@ const PortfolioApp = {
                         <div class="${expert.color} h-3 rounded-full" style="width: ${expert.percentage}%"></div>
                     </div>
                 </div>`; }, "");
-  },
-
-  renderSkills() {
-   
-   let habilidad =document.getElementById("habilidades");
-   
-    habilidad.innerHTML = skills.main.reduce((acumulador,habils)=> {
-
-        return acumulador + `  <div class="bg-dark dark:bg-white border border-[#2a3a50] dark:border-[#c0cce0] rounded-md sm:rounded-lg p-1.5 sm:p-4 text-[9px] sm:text-sm text-light dark:text-dark flex flex-col items-center justify-center shadow-sm">
-          <img src="${habils.icon}" alt="icono ${habils.name}" class="w-5 h-5 sm:w-10 sm:h-10 mb-1 sm:mb-2 object-contain"/>
-          <span class="font-medium truncate max-w-full">${habils.name}</span>
-          <div class="w-full bg-slate-700 dark:bg-slate-300 rounded-full h-3 mt-2">
-           <div class="bg-indigo-600 h-3 rounded-full" style="width: ${habils.nivel}%"></div>
-           </div>
-
-        </div>`; }, "");
-       
-    //console.log(habilidad.innerHTML);  
-      console.log("hola"); 
-    let habilidadAdic =document.getElementById("adicionalHabil");
-    
-    habilidadAdic.innerHTML = skills.additional.reduce((acumulador,habilsa)=> {
-
-          return acumulador + `  <div class="bg-dark dark:bg-white rounded-[10px] px-2 py-4 text-sm text-light dark:text-dark min-w-20 flex flex-col items-center">
-          <img 
-            src="${habilsa.icon}" 
-            alt="icono ${habilsa.name}" 
-            class="w-10 h-10 mb-1.5 object-contain"
-          />
-          <span class="font-medium">${habilsa.name}</span>
-      </div>`; }, "");
-         
- 
-  
-  },
 
 
-  renderProjects() {
-/*
-    let contenedorProyectos = document.getElementById("proyectos");
-
-if (contenedorProyectos) {
-  // 2. Corregido: Se agregaron backticks `` para que sea un template literal válido
-  contenedorProyectos.innerHTML = projects.reduce((acumulador, proy) => {
-    return acumulador + `
-      <div class="bg-deepBlue dark:bg-[#e8edf5] rounded-xl w-85 sm:w-full sm:max-w-85 overflow-hidden text-left">
-        <img src="${proy.image}" alt="${proy.title}" class="w-full h-40 object-cover block" style="background-color:#2a3a50;" />
-        <div class="p-4">
-          <span class="inline-block bg-[#E3FF6A20] text-highlight dark:text-deep-blue text-xs px-2.5 py-0.5 rounded-[10px] mb-2.5">${proy.category}</span>
-          <h3 class="m-0 mb-2 text-[17px] text-light dark:text-dark">${proy.title}</h3>
-          <p class="m-0 mb-3.5 text-softGray dark:text-[#4a5568] text-sm leading-[1.6]">${proy.description}</p>
-          <div class="flex gap-2.5">
-            <a href="${proy.demo}" class="btn-small bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark px-3.5 py-1.5 rounded-[15px] text-[13px] font-bold transition-colors duration-200">Demo</a>
-            <a href="${proy.github}" class="btn-small-outline dark:bg-black border border-highlight dark:border-[#3399ff] text-highlight px-3.5 py-1.5 rounded-[15px] text-[13px] transition-colors duration-200">GitHub</a>
-          </div>
-        </div>
-      </div>
-    `;
-  }, ""); // IMPORTANTE: Agregado el valor inicial "" para que el acumulador empiece vacío
-}
-*/
-/*
-    let projectos = document.getElementById("proyectos");
-    
-    projectos.innerHTML = projects.reduce((acumulador,proy)=> {
-
-          return acumulador + ` 
-
-
-      <div class="bg-deepBlue dark:bg-[#e8edf5] rounded-xl w-85 sm:w-full sm:max-w-85 overflow-hidden text-left">
-        <img src="${proy.description}"
-             alt="Plumbing Company"
-             class="w-full h-40 object-cover block" style="background-color:#2a3a50;" />
-        <div class="p-4">
-          <span class="inline-block bg-[#E3FF6A20] text-highlight dark:text-deep-blue text-xs px-2.5 py-0.5 rounded-[10px] mb-2.5">${proy.category}</span>
-          <h3 class="m-0 mb-2 text-[17px] text-light dark:text-dark">${proy.title}</h3>
-          <p class="m-0 mb-3.5 text-softGray dark:text-[#4a5568] text-sm leading-[1.6]">${proy.description}</p>
-          <div class="flex gap-2.5">
-            <a href="#" class="btn-small bg-highlight dark:bg-[#cce6ff] dark:text-deep-blue text-dark px-3.5 py-1.5 rounded-[15px] text-[13px] font-bold transition-colors duration-200">${proy.demo}</a>
-            <a href="#" class="btn-small-outline dark:bg-black border border-highlight dark:border-[#3399ff] text-highlight px-3.5 py-1.5 rounded-[15px] text-[13px] transition-colors duration-200">${proy.github}</a>
-          </div>
-        </div>
-      </div>`; }, "");
-*/      
-  },
-
-
-  setupContactForm() {
-    const btnEnviar = document.querySelector('.btn-enviar');
+const btnEnviar = document.querySelector('.btn-enviar');
    
      if (!btnEnviar) return;
 
@@ -233,11 +139,6 @@ if (contenedorProyectos) {
     }, 5000);
   }
 
-
-
-
-  }
-};
-
 // Ejecutar al cargar el documento
 document.addEventListener('DOMContentLoaded', () => PortfolioApp.init());
+
